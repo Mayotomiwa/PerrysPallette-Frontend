@@ -5,7 +5,7 @@ import { faQuoteLeft, faQuoteRight, faClock, faEnvelope, faPhone, faLocation, fa
 import { faInstagram, faFacebook, faTwitter, faLinkedin, faSkype } from '@fortawesome/free-brands-svg-icons';
 
 import Container from 'react-bootstrap/Container';
-import { Nav, Navbar, Image, Row, Col, Stack, Form, Button } from 'react-bootstrap';
+import { Nav, Navbar, Image, Row, Col, Stack, Form, Button, NavbarBrand } from 'react-bootstrap';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -19,6 +19,7 @@ import '../styles/Home.css';
 import { Pagination } from 'swiper/modules';
 import { Autoplay } from 'swiper/modules';
 import { EffectFade } from 'swiper/modules';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
 export default function Home() {
     useEffect(() => {
@@ -36,20 +37,25 @@ export default function Home() {
                 <Container fluid id="header" className="fixed-top align-items-center">
                     <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-                        <Navbar id="navbar" className="navbar order-last order-lg-0">
+                        <Navbar collapseOnSelect expand="lg" data-bs-theme="dark" id="navbar" className="navbar order-last order-lg-0">
                             <Container>
-                                <Nav>
-                                    <Nav.Link href="#hero">Home</Nav.Link>
-                                    <Nav.Link href="#about">About</Nav.Link>
-                                    <Nav.Link href="#menu">Menu</Nav.Link>
-                                    <Nav.Link href="#specials">Specials</Nav.Link>
-                                    <Nav.Link href="#events">Events</Nav.Link>
-                                    <Nav.Link href="#chefs">Chefs</Nav.Link>
-                                    <Nav.Link href="#gallery">Gallery</Nav.Link>
-                                    <Nav.Link href="#contact">Contact</Nav.Link>
-                                </Nav>
+                                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                                <Navbar.Brand href="#hero">
+                                    <img src="src/assets/images/ppLogo.png" style={{ width: 70, height: 70 }} alt="" class="img-fluid p-0 ms-0 me-2" />
+                                </Navbar.Brand>
+                                <Navbar.Collapse id="responsive-navbar-nav">
+                                    <Nav>
+                                        <Nav.Link href="#hero">Home</Nav.Link>
+                                        <Nav.Link href="#about">About</Nav.Link>
+                                        <Nav.Link href="#menu">Menu</Nav.Link>
+                                        <Nav.Link href="#specials">Specials</Nav.Link>
+                                        <Nav.Link href="#events">Events</Nav.Link>
+                                        <Nav.Link href="#chefs">Chefs</Nav.Link>
+                                        <Nav.Link href="#gallery">Gallery</Nav.Link>
+                                        <Nav.Link href="#contact">Contact</Nav.Link>
+                                    </Nav>
+                                </Navbar.Collapse>
                             </Container>
-                            <i className="bi bi-list mobile-nav-toggle"></i>
                         </Navbar>
                         {/* <!-- .navbar --> */}
                         <a href="#book-a-table" className="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
@@ -65,7 +71,7 @@ export default function Home() {
                             <div className="col-lg-8">
                                 <h1>Welcome to <span>Perry's Palete</span></h1>
                                 <h2>The home of international cuisines and delicatessen.</h2>
-                                <h2 style={{fontStyle: 'italic'}}>We make food shine, we shine through food.</h2>
+                                <h2 style={{ fontStyle: 'italic' }}>We make food shine, we shine through food.</h2>
 
                                 <div className="btns">
                                     <a href="#menu" className="btn-menu animated fadeInUp scrollto">Our Menu</a>
@@ -291,8 +297,6 @@ export default function Home() {
                                     speed={2000}
                                     spaceBetween={50}
                                     slidesPerView={1}
-                                    onSlideChange={() => console.log('slide change')}
-                                    onSwiper={(swiper) => console.log(swiper)}
                                 >
                                     <SwiperSlide>
                                         <Row className="event-item">
@@ -441,8 +445,6 @@ export default function Home() {
                                     speed={2000}
                                     spaceBetween={50}
                                     slidesPerView={2}
-                                    onSlideChange={() => console.log('slide change')}
-                                    onSwiper={(swiper) => console.log(swiper)}
                                 >
                                     <SwiperSlide>
                                         <div class="testimonial-item">
@@ -595,7 +597,7 @@ export default function Home() {
                             </div>
                         </Container>
                         <div data-aos="fade-up">
-                            <iframe style={{ border: 0, width: '100%', height: 350, }} src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=15250, Gray Ridge Drive, Houston, Texas, USA&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen></iframe>
+                            <iframe style={{ border: 0, width: '100%', height: 350, }} src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=15250, Gray Ridge Drive, Houston, Texas, USA&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" allowFullScreen></iframe>
                         </div>
                         <Container data-aos="fade-up">
                             <Row className="mt-5">
@@ -673,7 +675,10 @@ export default function Home() {
 
                                 <div className="col-lg-3 col-md-6">
                                     <div className="footer-info">
-                                        <h3>Perry's Palete</h3>
+                                        <span>
+                                            <img src="src/assets/images/ppLogo.png" style={{ width: 70, height: 70 }} alt="" class="img-fluid p-0 ms-0 me-2" />
+                                            <h3>Perry's Palete</h3>
+                                        </span>
                                         <p>
                                             A108 Adam Street <br />
                                             NY 535022, USA<br /><br />

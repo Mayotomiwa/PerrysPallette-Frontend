@@ -1,25 +1,22 @@
 import React, { useEffect } from 'react';
 
+import { faFacebook, faInstagram, faLinkedin, faSkype, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faChevronRight, faClock, faEnvelope, faLocation, faPhone, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteLeft, faQuoteRight, faClock, faEnvelope, faPhone, faLocation, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faFacebook, faTwitter, faLinkedin, faSkype } from '@fortawesome/free-brands-svg-icons';
 
+import { Button, Col, Form, Image, Nav, Navbar, Row, Stack } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
-import { Nav, Navbar, Image, Row, Col, Stack, Form, Button, NavbarBrand } from 'react-bootstrap';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import 'swiper/css/effect-fade'
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Aos from 'aos';
 import '../styles/Home.css';
 
-import { Pagination } from 'swiper/modules';
-import { Autoplay } from 'swiper/modules';
-import { EffectFade } from 'swiper/modules';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 
 export default function Home() {
     useEffect(() => {
@@ -48,10 +45,8 @@ export default function Home() {
                                         <Nav.Link href="#hero">Home</Nav.Link>
                                         <Nav.Link href="#about">About</Nav.Link>
                                         <Nav.Link href="#menu">Menu</Nav.Link>
-                                        <Nav.Link href="#specials">Specials</Nav.Link>
                                         <Nav.Link href="#events">Events</Nav.Link>
                                         <Nav.Link href="#chefs">Chefs</Nav.Link>
-                                        <Nav.Link href="#gallery">Gallery</Nav.Link>
                                         <Nav.Link href="#contact">Contact</Nav.Link>
                                     </Nav>
                                 </Navbar.Collapse>

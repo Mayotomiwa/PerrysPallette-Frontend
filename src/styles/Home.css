@@ -1132,8 +1132,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # Testimonials
-  --------------------------------------------------------------*/
+    # Testimonials
+--------------------------------------------------------------*/
 .testimonials .testimonial-item {
     box-sizing: content-box;
     min-height: 320px;
@@ -1543,6 +1543,7 @@ section {
 #footer .footer-top .footer-links ul a:hover {
     color: #ed3c0d;
 }
+
 #footer .footer-top .footer-newsletter h4,
 #footer .footer-top .footer-newsletter p {
     font-family: Cormorant Infant;
@@ -1558,7 +1559,7 @@ section {
     border: 1px solid #454035;
 }
 
-#footer .footer-top .footer-newsletter .form-item .form-items-email{
+#footer .footer-top .footer-newsletter .form-item .form-items-email {
     border: 0;
     padding: 4px;
     width: 60%;

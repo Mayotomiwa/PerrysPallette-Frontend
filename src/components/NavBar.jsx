@@ -1,9 +1,9 @@
+import { faFacebook, faInstagram, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faTwitter, faPinterest } from '@fortawesome/free-brands-svg-icons'
 import '../styles/Home.css';
 
 export default function NavBarComponent() {
@@ -17,7 +17,6 @@ export default function NavBarComponent() {
                         <Nav.Link href="#link" className='me-5'>About</Nav.Link>
                         <Nav.Link href="#link" className='me-5'>Menu</Nav.Link>
                         <Nav.Link href="#link" className='me-5'>Reservation</Nav.Link>
-                        <Nav.Link href="#link" className='me-5'>Gallery</Nav.Link>
                         <Nav.Link href="#link" className='me-5'>Contact</Nav.Link>
                     </Nav>
                     <Nav className='me-auto'>

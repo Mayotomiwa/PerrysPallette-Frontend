@@ -4,8 +4,7 @@ import { faFacebook, faInstagram, faLinkedin, faSkype, faTwitter } from '@fortaw
 import { faChevronRight, faClock, faEnvelope, faLocation, faPhone, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Button, Col, Form, Image, Nav, Navbar, Row, Stack } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
+import { Button, Col, Container, Form, Image, Nav, Navbar, Row, Stack } from 'react-bootstrap';
 
 import 'swiper/css';
 import 'swiper/css/autoplay';

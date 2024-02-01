@@ -10,6 +10,7 @@ export default defineConfig({
       '@fortawesome/free-brands-svg-icons': '/node_modules/@fortawesome/free-brands-svg-icons/index',
       '@fortawesome/free-solid-svg-icons' : '/node_modules/@fortawesome/free-solid-svg-icons/index',
       '@fortawesome/react-fontawesome': '/node_modules/@fortawesome/react-fontawesome/index',
+      'react-bootstrap': '/node_modules/react-bootstrap/esm/index',
     },
   },
 })

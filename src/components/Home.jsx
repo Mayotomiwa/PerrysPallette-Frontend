@@ -5,6 +5,7 @@ import { faChevronRight, faClock, faEnvelope, faLocation, faPhone, faQuoteLeft, 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Button, Col, Container, Form, Image, Nav, Navbar, Row, Stack } from 'react-bootstrap';
+import logo from '../assets/img/ppLogo.png';
 
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -37,7 +38,7 @@ export default function Home() {
                             <Container>
                                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                                 <Navbar.Brand href="#hero">
-                                    <img src="src/assets/images/ppLogo.png" style={{ width: 70, height: 70 }} alt="" class="img-fluid p-0 ms-0 me-2" />
+                                    <img src= {logo} style={{ width: 70, height: 70 }} alt="" class="img-fluid p-0 ms-0 me-2" />
                                 </Navbar.Brand>
                                 <Navbar.Collapse id="responsive-navbar-nav">
                                     <Nav>
@@ -670,7 +671,7 @@ export default function Home() {
                                 <div className="col-lg-3 col-md-6">
                                     <div className="footer-info">
                                         <span>
-                                            <img src="src/assets/images/ppLogo.png" style={{ width: 70, height: 70 }} alt="" class="img-fluid p-0 ms-0 me-2" />
+                                            <img src={logo} style={{ width: 70, height: 70 }} alt="" class="img-fluid p-0 ms-0 me-2" />
                                             <h3>Perry's Palete</h3>
                                         </span>
                                         <p>
@@ -690,7 +691,7 @@ export default function Home() {
                                 </div>
 
                                 <div className="col-lg-2 col-md-6 footer-links">
-                                    <h4>Useful Links</h4>
+                                    <h4>Quick Links</h4>
                                     <ul>
                                         <li><FontAwesomeIcon icon={faChevronRight} className='icons' /> <a className='ms-2' href="#">Home</a></li>
                                         <li><FontAwesomeIcon icon={faChevronRight} className='icons' /> <a className='ms-2' href="#">About us</a></li>
